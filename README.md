@@ -64,7 +64,7 @@ Crie um arquivo `.env` na raiz do projeto:
 ABLY_API_KEY=your_ably_api_key_here
 ```
 
-> 💡 Para obter sua API Key, acesse [Ably Dashboard](https://ably.com/dashboard) → Crie um app → Copie a API Key
+> Para obter sua API Key, acesse [Ably Dashboard](https://ably.com/dashboard) → Crie um app → Copie a API Key
 
 3. **Instale as dependências**
 ```bash
