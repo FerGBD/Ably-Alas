@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flamengo vs Vasco - Ao Vivo</title>
+    <link rel="stylesheet" href="/static/css/match.css">
+    <script src="https://cdn.ably.com/lib/ably.min-1.js"></script>
+</head>
+<body data-ably-key="{{.AblyAPIKey}}">
+    <div class="container">
+        <!-- Header do Jogo -->
+        <div class="match-header">
+            <div class="match-title">Campeonato Carioca 2026</div>
+            <div class="teams">
+                <div class="team">
+                    <div class="team-badge">🔴⚫</div>
+                    <div class="team-name">Flamengo</div>
+                </div>
+                <div class="vs">VS</div>
+                <div class="team">
+                    <div class="team-badge">⚫⚪</div>
+                    <div class="team-name">Vasco</div>
+                </div>
+            </div>
+            <div class="match-info">
+                <div class="live-indicator">
+                    <div class="live-dot"></div>
+                    AO VIVO
+                </div>
+                <div class="info-item">
+                    <span>📍</span>
+                    <span>Maracanã</span>
+                </div>
+                <div class="info-item">
+                    <span>🕐</span>
+                    <span id="current-time">--:--</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feed de Lances -->
+        <div id="feed">
+            <div class="feed-header">
+                <h2 class="feed-title">📋 Lances do Jogo</h2>
+                <div class="lance-count">0 lances</div>
+            </div>
+            <div id="status">
+                <div class="status-icon">⚽</div>
+                <div>Conectando ao estádio...</div>
+            </div>
+            <div id="lances-container"></div>
+        </div>
+    </div>
+
+    <script src="/static/js/match.js"></script>
+</body>
+</html>

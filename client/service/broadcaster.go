@@ -32,6 +32,6 @@ func (s *FootballService) PublishLance(tipo, desc string, minuto int) error {
 
 func (s *FootballService) SubscribeLances() {
 	s.Channel.SubscribeAll(context.Background(), func(msg *ably.Message) {
-		fmt.Printf("\n [%s] %s\n", msg.Name, msg.Data)
+		fmt.Printf("\n✅ [%s] %s\n", msg.Name, msg.Data)
 	})
 }
